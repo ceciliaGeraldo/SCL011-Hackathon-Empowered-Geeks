@@ -52,7 +52,7 @@ const Optioninit=()=>{
   return(
    < Fragment >
    <div className="container-option">
-        <Header to="/" name="categorías"/>
+        <Header to="/" name="Inicio"/>
 
         <p>Por favor, seleccione la acción que desea realizar.</p>
         <div className="category">

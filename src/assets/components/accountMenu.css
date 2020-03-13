@@ -1,4 +1,5 @@
-.btnAccountMenu{
+/*.btnAccountMenu{
+
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     background-color: black;
@@ -10,8 +11,11 @@
 }
 
 .imgAccount{
-    width:164px;
-    
+    width:165px;
+}
+.btn{
+    background-color: black;
+    border: black;
 }
 
 .arrow{
@@ -25,7 +29,27 @@
 .btn-volume {
     color: white;
 }
-.btn-volume i{
-    width: 80px;
-    height: 80px;
+*/
+.btnAccountMenu{
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    background-color: black;
+    width: 50%;
+}
+
+.accountMenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imgAccount{
+    width:165px;
+}
+.btn{
+    background-color: black;
+    border: black;
+}
+
+i{
+    color:#FFFFFF;
 }
