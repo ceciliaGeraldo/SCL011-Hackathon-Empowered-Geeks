@@ -8,6 +8,7 @@ import tvcable from '../img/tvcable.png';
 import '../components/accountMenu.css';
 import Microphone from '../components/btnMicrophone';
 import { Link } from "react-router-dom";
+import BtnBackNext from '../components/btnBackNext'
 
 
 const accountmenu = () => {
@@ -78,38 +79,33 @@ const accountmenu = () => {
 
     <Fragment>
       <div className="accountMenu">
+      
+          <Link to="/Luz" className="btnAccountMenu">
+          <button id="cable"   className="btn"ref={simulateClick} onClick={() => console.log('clicked')}><img src={luz} className="imgAccount" alt="luz" /></button></Link>
+        
+        
+        <Link to="/Agua" className="btnAccountMenu">
+        <button id="cable"  className="btn" ref={simulateClick} onClick={() => console.log('clicked')}><img src={agua} className="imgAccount" alt="agua" /></button></Link>
+        
+        
+        <Link to="/Gas" className="btnAccountMenu">
+        <button id="cable" className="btn"  ref={simulateClick} onClick={() => console.log('clicked')}><img src={gas} className="imgAccount" alt="gas" /></button></Link>
+        
+        
+        <Link to="/TelefonoMovil" className="btnAccountMenu">  
+        <button id="cable" className="btn" ref={simulateClick} onClick={() => console.log('clicked')}><img src={telefono} className="imgAccount" alt="telefono" /></button></Link>
+        
+        
+        <Link to="/TelefonoFijoInternet" className="btnAccountMenu">  
+        <button id="cable" className="btn" ref={simulateClick} onClick={() => console.log('clicked')}><img src={internet} className="imgAccount" alt="internet" /></button></Link>
+        
+        
+          <Link to="/TvCable/Satelital" className="btnAccountMenu">  
+          <button id="cable" className="btn" ref={simulateClick} onClick={() => console.log('clicked')}><img src={tvcable} className="imgAccount" alt="tvcable" /></button>
+          </Link>
 
-        <Link to="/Luz"><img src={luz} className="imgAccount" alt="luz" />
-          <button id="luz" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button>
-        </Link>
-        <Link to="/Agua"><img src={agua} className="imgAccount" alt="agua" />
-          <button id="agua" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button>
-        </Link>
-
-        
-          <Link to="/Gas"><img src={gas} className="imgAccount" alt="gas" />
-          <button id="gas" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button>
-          </Link>
-        
-          <Link to="/TelefonoMovil">  <img src={telefono} className="imgAccount" alt="telefono" />
-        <button id="telefono" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button>
-          </Link>
-        
-        
-          <Link to="/TelefonoFijoInternet">  <img src={internet} className="imgAccount" alt="internet" />
-          <button id="internet" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button></Link>
-        
-        
-          <Link to="/TvCable/Satelital">  <img src={tvcable} className="imgAccount" alt="tvcable" />
-          <button id="cable" className="btnAccountMenu" ref={simulateClick} onClick={() => console.log('clicked')}></button>
-          </Link>
-        
-        <div>
-          <Link to="/" className="arrow"><i class="fas fa-arrow-left"></i></Link>
-          <Link to="/" className="arrow"><i class="fas fa-arrow-right"></i></Link>
-        </div>
-        <span id="message"></span>
-        <button id="escuchar" className="btn-volume" onClick={recognition.start()}><i class="fas fa-volume"></i></button>
+        {/* <BtnBackNext /> */}
+        <button className="btn-volume" onClick={recognition.start()}><i class="fas fa-microphone fa-7x"></i></button>
       </div>
     </Fragment>)
 };
