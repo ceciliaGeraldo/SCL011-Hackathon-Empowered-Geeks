@@ -21,3 +21,11 @@
     padding-right: 4.5em;
     padding-block-end: 1em;
 }
+
+.btn-volume {
+    color: white;
+}
+.btn-volume i{
+    width: 80px;
+    height: 80px;
+}

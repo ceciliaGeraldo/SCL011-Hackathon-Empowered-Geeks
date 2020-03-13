@@ -62,8 +62,6 @@ const Optioninit=()=>{
         </div>
         <button className="btn-volume" onClick={recognition.start()}><i class="fas fa-microphone fa-7x"></i></button>
    </div>
-  
-
    </Fragment>
 
   )
